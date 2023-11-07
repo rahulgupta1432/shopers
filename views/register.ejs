@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+            integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+      <style>
+            form {
+                  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                  font-size: x-large;
+                  text-align: center;
+            }
+
+            button {
+                  font-family: Georgia, 'Times New Roman', Times, serif;
+                  font-style: inherit;
+                  background-color: yellowgreen;
+                  border-radius: 35%;
+                  text-decoration: none;
+
+            }
+      </style>
+      <title>Document</title>
+</head>
+
+<body>
+      <form action="/register" method="post">
+            <table>
+                  <tr>
+                        <td>
+                              <label for="FName">Name</label>
+                              <input type="text" name="name" /><br><br>
+                        </td>
+                  </tr>
+                  <tr>
+                        <td><label for="Password">Password
+                                    <input type="password" name="password" /><br><br></td>
+                  </tr>
+                  <tr>
+                        <td>
+                              <label for="Email_Id">Email_Id
+                                    <input type="email" name="email" /><br><br>
+                        </td>
+                  </tr>
+                  <tr>
+                        <td>
+                              <label for="Contact">Contact<input type="text" name="phone" /><br><br>
+                        </td>
+                  <tr>
+                        <td><button class="btn btn-primary" type="submit">Register</button></td>
+                  </tr>
+
+                  </tr>
+
+            </table>
+      </form>
+</body>
+
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+      <%- include('../component/head',{data:{title:'Product Add'}});%>
+            <style>
+                  .view {
+                        display: flex;
+                        justify-content: center;
+                        color: rgb(108, 108, 197);
+                        font-family: 'Times New Roman', Times, serif;
+                  }
+            </style>
+</head>
+
+<body>
+      <%- include("../component/menu") %>
+            <div class="container">
+                  <div class="offset-sm-3 col-6 mt-5">
+                        <h1 class="view">Create Product</h1>
+                        <form action="/product/create" method="post">
+                              <div class="mb-3">
+                                    <label for="form-label">Name</label>
+                                    <input type="text" name="name" class="form-control"
+                                          placeholder="Please Enter Product Name">
+                              </div>
+                              <div class="mb-3">
+                                    <div class="form-label">Price</div>
+                                    <input type="text" name="price" class="form-control" placeholder="Enter Price here">
+                              </div>
+                              <div class="mb-3">
+                                    <div class="form-label">
+                                          <label class="form-label">Description</label><br>
+                                          <textarea name="desc" class="form-control" cols="30" rows="2"
+                                                placeholder="Type here product of description..."></textarea>
+                                    </div>
+                              </div>
+                              <input type="submit" value="Add Product" class="btn btn-outline-success">
+                        </form>
+                  </div>
+            </div>
+
+            <%- include("../component/footer") %>
+</body>
+
+</html>
