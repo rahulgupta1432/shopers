@@ -7,8 +7,8 @@ function mail(mailoption) {
                   port: 465,
                   secure: true,
                   auth: {
-                        user: "rahulkumar058790@gmail.com",
-                        pass: "lxte pyhj vnai gkqp"
+                        user: "your email id put here",
+                        pass: "your password here"
                   }
             })
             transporter.sendMail(mailoption, (err, info) => {

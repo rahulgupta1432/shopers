@@ -11,8 +11,8 @@ async function mail(mailOptions) {
                   port: 465,
                   secure: true,
                   auth: {
-                        user: "rahulkumar058790@gmail.com",
-                        pass: "lxte pyhj vnai gkqp"
+                        user: "your email id put here",
+                        pass: "your password put here"
                   }
             })
             transporter.sendMail(mailOptions, (err) => {
@@ -25,8 +25,8 @@ async function mail(mailOptions) {
 }
 
 let mailOption = {
-      from: "rahulkumar058790@gmail.com",
-      to: "rahulkumar058790@gmail.com",
+      from: "your email id",
+      to: "another person email id",
       subject: "mail testing",
       text: `Hello World! + ${otp}`
 }
